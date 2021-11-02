@@ -1,4 +1,4 @@
-#Tinder clone
+# Tinder clone
 
 # Getting Started with Create React App
 
