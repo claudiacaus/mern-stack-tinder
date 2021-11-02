@@ -10,18 +10,22 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "react-tinder-card": "^1.4.5",
     "styled-components": "^5.3.3",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "main": "server.js"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "nodemon server.js"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +47,8 @@
   },
   "devDependencies": {
     "@babel/preset-react": "^7.16.0",
-    "babel-plugin-styled-components": "^1.13.3"
-  }
+    "babel-plugin-styled-components": "^1.13.3",
+    "nodemon": "^2.0.14"
+  },
+  "type": "module"
 }
