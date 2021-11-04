@@ -2,6 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import Cards from './dbCards.js';
 import dotenv from 'dotenv';
+import Cors from 'cors';
 
 dotenv.config();
 
@@ -13,6 +14,8 @@ const port = process.env.PORT || 8001;
 const connection_url = `mongodb+srv://admin:${process.env.MONGO_DB_PASSWORD}@cluster0.aewrb.mongodb.net/tinderdb?retryWrites=true&w=majority`;
 
 // Middleware
+app.use(express.json());
+app.use(Cors());
 
 // DB config
 mongoose.connect(connection_url);
